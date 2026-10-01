@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Richard & Marilyn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="topbar">
+            <div class="topbar-inner">
+                <span><i class="fas fa-map-marker-alt"></i> Burlyec, Laroo-Pece Division, Gulu City</span>
+                <span><i class="fas fa-envelope"></i> ramkaes98@gmail.com</span>
+            </div>
+        </div>
+
+        <div class="nav-shell">
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="activities.html">Activities</a>
+                <a href="learning.html">Learning</a>
+                <a href="portal.html">Portal</a>
+                <a href="application.html">Apply</a>
+                <a href="donate.html">Donate</a>
+            </nav>
+
+            <a class="nav-cta" href="index.html">Back Home</a>
+
+            <div class="brand" aria-label="Richard and Marilyn School">
+                <div class="brand-mark"><i class="fas fa-school"></i></div>
+                <div>
+                    <h1>Richard & Marilyn</h1>
+                    <p>Kindergarten & Elementary School</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="portal-section" style="padding-top: 48px;">
+            <div class="portal-grid">
+                <div class="card donor-card" style="grid-column: 1 / -1; max-width: 760px; margin: 0 auto;">
+                    <div class="card-header">
+                        <div class="school-badge donate-badge"><i class="fas fa-hand-holding-heart"></i></div>
+                        <h2>School Development Fund</h2>
+                        <p>Help us improve classrooms, learning materials and school life.</p>
+                    </div>
+
+                    <form id="donationForm">
+                        <div class="currency-toggle">
+                            <label><input type="radio" name="currency" value="UGX" checked> UGX</label>
+                            <label><input type="radio" name="currency" value="USD"> USD</label>
+                        </div>
+
+                        <div class="amount-grid" id="amountGrid">
+                            <button type="button" class="amount-btn active" data-amount="50000">50k</button>
+                            <button type="button" class="amount-btn" data-amount="100000">100k</button>
+                            <button type="button" class="amount-btn" data-amount="250000">250k</button>
+                            <button type="button" class="amount-btn" data-amount="custom">Custom</button>
+                        </div>
+
+                        <div class="input-group custom-amount-group" style="display: none;">
+                            <label for="customAmount">Enter custom amount</label>
+                            <input type="number" id="customAmount" min="5000" placeholder="Minimum UGX 5,000">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="donorName">Donor name</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-building"></i>
+                                <input type="text" id="donorName" placeholder="Leave blank for anonymous giving">
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Preferred payment method</label>
+                            <div class="payment-method-selector">
+                                <label class="method-option">
+                                    <input type="radio" name="paymentMethod" value="momo" checked>
+                                    <span><i class="fas fa-mobile-alt"></i> Mobile Money</span>
+                                </label>
+                                <label class="method-option">
+                                    <input type="radio" name="paymentMethod" value="card">
+                                    <span><i class="fas fa-credit-card"></i> Card Payment</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-success full-width">
+                            <i class="fas fa-shield-alt"></i> Complete Secure Contribution
+                        </button>
+
+                        <div class="payment-badges">
+                            <span class="momo-badge mtn">MTN MoMo</span>
+                            <span class="momo-badge airtel">Airtel Money</span>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="brand-mark small"><i class="fas fa-school"></i></div>
+                <div>
+                    <strong>Richard & Marilyn</strong>
+                    <p>Kindergarten & Elementary School</p>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="index.html#activities">Activities</a>
+                <a href="portal.html">Portal</a>
+                <a href="donate.html">Donate</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>Burlyec, Laroo-Pece Division, Gulu City</span>
+            <span>© 2026 Richard & Marilyn School</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
